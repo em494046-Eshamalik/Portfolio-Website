@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Memon Fatima's portfolio - B.Ed student, web development and data analytics enthusiast." />
+  <title>Aimen Fatima | Personal Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./java.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">AF<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-toggle"
+          aria-label="Switch color theme">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>Aimen  Fatima</span></h1>
+        <h2>B.Ed Student & <span id="typingText">Web Enthusiast</span></h2>
+
+        <p class="hero-description">
+          I am a student at Government College Women University,
+          passionate about web technologies, creative problem-solving
+          and data analytics. I enjoy learning new skills and building
+          useful digital projects.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank"
+            rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-decoration"></div>
+        <img src="./images.jpg"
+          alt="Memon Fatima profile portrait"
+          onerror="this.onerror=null;this.src='https://placehold.co/420x480/e7eafe/5146a5?text=Memon+Fatima';" />
+        <div class="floating-card">
+          <span>✨</span>
+          <div>
+            <strong>Always Learning</strong>
+            <p>Growing every day</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2>About <span>Me</span></h2>
+          <p>A little introduction about my education and interests.</p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">🎓</div>
+          <div>
+            <h3>My Education & Journey</h3>
+            <p>
+              My name is Aimen Fatima, and I am pursuing a Bachelor
+              of Education (B.Ed) at Government College Women University.
+              Alongside my studies, I am developing my technical skills
+              in HTML, CSS3, JavaScript and Data Analytics.
+            </p>
+            <p>
+              My goal is to combine creativity, technology and analytical
+              thinking to create helpful digital experiences and continue
+              growing through practical projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section container" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I AM LEARNING</p>
+        <h2>My <span>Skills</span></h2>
+        <p>Technologies and areas I am developing my knowledge in.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-icon html-icon">5</div>
+          <h3>HTML5</h3>
+          <p>Building structured and accessible web pages.</p>
+          <div class="skill-track"><span style="--level:85%"></span></div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon css-icon">3</div>
+          <h3>CSS3</h3>
+          <p>Creating attractive layouts and responsive designs.</p>
+          <div class="skill-track"><span style="--level:80%"></span></div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon js-icon">JS</div>
+          <h3>JavaScript</h3>
+          <p>Adding interactive features to websites.</p>
+          <div class="skill-track"><span style="--level:65%"></span></div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon data-icon">▥</div>
+          <h3>Data Analytics</h3>
+          <p>Learning to understand data and identify insights.</p>
+          <div class="skill-track"><span style="--level:60%"></span></div>
+        </article>
+      </div>
+      <p class="small-note">
+        Skill levels are sample values. Adjust them to reflect actual experience.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">MY PRACTICE WORK</p>
+          <h2>Featured <span>Projects</span></h2>
+          <p>Sample project ideas you can replace with your real work.</p>
+        </div>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="data">Data Analytics</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card" data-category="web">
+            <div class="project-visual visual-one">🌐</div>
+            <div class="project-info">
+              <span class="project-tag">Web Development</span>
+              <h3>Personal Portfolio</h3>
+              <p>A responsive personal website to present my skills,
+                background and projects.</p>
+              <div class="project-tech">HTML · CSS · JavaScript</div>
+              <a href="#contact" class="project-link">Project Details ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="data">
+            <div class="project-visual visual-two">📊</div>
+            <div class="project-info">
+              <span class="project-tag">Data Analytics</span>
+              <h3>Student Data Dashboard</h3>
+              <p>A practice project idea for organizing student data
+                and presenting useful summaries.</p>
+              <div class="project-tech">Data · Charts · Analysis</div>
+              <a href="#contact" class="project-link">Project Details ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <div class="project-visual visual-three">📚</div>
+            <div class="project-info">
+              <span class="project-tag">Web Development</span>
+              <h3>Learning Resources Page</h3>
+              <p>A simple educational webpage for displaying learning
+                resources in an organized layout.</p>
+              <div class="project-tech">HTML · CSS · JavaScript</div>
+              <a href="#contact" class="project-link">Project Details ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="small-note">
+          These are demonstration cards, not claims of completed projects.
+          Replace them with your real projects and working links.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section container" id="contact">
+      <div class="contact-card">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Have a project or an opportunity?</h2>
+        <p>
+          I am interested in learning, collaborating and exploring
+          opportunities to grow my skills.
+        </p>
+        <a class="btn btn-primary" id="emailButton"
+          href="mailto:fatima@example.com">Send Me an Email</a>
+        <p class="small-note">
+          aimane45678@gmail.com
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Memon Fatima. Made with HTML, CSS & JavaScript.</p>
+    <a href="#home">Back to Top ↑</a>
+  </footer>
+
+</body>
+</html>
